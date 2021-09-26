@@ -8,14 +8,13 @@ metadata:
 webhooks:
 - admissionReviewVersions:
   - v1alpha2
-  - v1alpha1
   clientConfig:
     service:
       name: webhook-service
       namespace: system
       path: /mutate-core-openfunction-io-v1alpha2-functions
   failurePolicy: Fail
-  name: mfunctions.core.openfunction.io
+  name: mfunctions.of.io
   rules:
   - apiGroups:
     - core.openfunction.io
@@ -29,14 +28,13 @@ webhooks:
   sideEffects: None
 - admissionReviewVersions:
   - v1alpha2
-  - v1alpha1
   clientConfig:
     service:
       name: webhook-service
       namespace: system
       path: /mutate-core-openfunction-io-v1alpha2-servings
   failurePolicy: Fail
-  name: mservings.core.openfunction.io
+  name: mservings.of.io
   rules:
   - apiGroups:
     - core.openfunction.io

@@ -32,7 +32,7 @@ func (r *Serving) SetupWebhookWithManager(mgr ctrl.Manager) error {
 }
 
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
-//+kubebuilder:webhook:path=/mutate-core-openfunction-io-v1alpha2-servings,mutating=true,failurePolicy=fail,groups=core.openfunction.io,resources=servings,verbs=create;update,versions=v1alpha2,name=mservings.core.openfunction.io,sideEffects=None,admissionReviewVersions=v1alpha2;v1alpha1
+//+kubebuilder:webhook:path=/mutate-core-openfunction-io-v1alpha2-servings,mutating=true,failurePolicy=fail,groups=core.openfunction.io,resources=servings,verbs=create;update,versions=v1alpha2,name=mservings.of.io,sideEffects=None,admissionReviewVersions=v1alpha2
 
 var _ webhook.Defaulter = &Serving{}
 
